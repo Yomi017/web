@@ -9,6 +9,13 @@ useHead({
       content: hkustgz.description,
     },
   ],
+  link: [
+    {
+      rel: "icon",
+      type: "image/x-icon",
+      href: "/testico1.ico",
+    },
+  ],
 });
 </script>
 
@@ -16,7 +23,7 @@ useHead({
   <!-- <div class="root">
     <HomeContainer />
   </div> -->
-  <img src="/78125984_p0.jpg" />
+  <img src="/image/testpic1.jpg" />
 </template>
 
 <style lang="scss" scoped>
