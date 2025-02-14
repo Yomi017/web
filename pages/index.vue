@@ -20,9 +20,9 @@ useHead({
 </script>
 
 <template>
-  <!-- <div class="root">
+  <div class="root">
     <HomeContainer />
-  </div> -->
+  </div>
   <img src="/image/testpic1.jpg" />
 </template>
 

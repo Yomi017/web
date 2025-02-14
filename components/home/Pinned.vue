@@ -7,7 +7,7 @@ import type { HomePinnedTopic } from '~/types/api/home.d.ts'
 const { locale } = useI18n()
 
 // 使用 Nuxt 的 useLazyFetch 钩子异步获取置顶主题数据
-const { data } = await useLazyFetch<HomePinnedTopic[]>(`/api/home/pin`, {
+const { data } = await useLazyFetch<HomePinnedTopic[]>(`/types/api/home/pin`, {
   method: 'GET'
 })
 </script>
@@ -26,7 +26,7 @@ const { data } = await useLazyFetch<HomePinnedTopic[]>(`/api/home/pin`, {
       <!-- 显示主题标题 -->
       <span>{{ topic.title }}</span>
       <!-- 显示格式化后的发布时间 -->
-      <span>{{ formatTimeDifference(topic.time, locale) }}</span>
+      <span>{{ formatTimeDifference(topic.time) }}</span>
     </NuxtLink>
   </div>
 </template>
